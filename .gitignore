@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Local database files
+backend/data/*.json
+!backend/data/products.json
+
+# User Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite production builds
+dist/
+dist-ssr/
+*.local
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

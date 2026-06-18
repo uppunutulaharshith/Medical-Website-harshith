@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxmi Narsima Medical & General Store - Trusted Pharmacy & Wellness Store</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Laxmi Narsima Medical and General Store is a trusted neighborhood pharmacy providing high-quality medicines, OTC products, personal care items, and wellness tools at affordable prices.">
+    <meta name="keywords" content="pharmacy, medical store, Laxmi Narsima, medicines, prescription upload, local health shop, personal care, baby care, BMI calculator, water tracker, home delivery medicines">
+    <meta name="author" content="Laxmi Narsima Medical">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Laxmi Narsima Medical & General Store">
+    <meta property="og:description" content="Get quick pharmacy service, premium OTC & prescription medications, and interactive wellness calculators. Upload your prescription online.">
+    <meta property="og:type" content="website">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --- HEADER / NAVIGATION --- -->
+    <header class="header" id="header">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo" id="store-logo">
+                <div class="logo-icon" aria-hidden="true">LN</div>
+                <div class="logo-text">Laxmi <span>Narsima</span></div>
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+                    <li><a href="#services" class="nav-link" id="link-services">Services</a></li>
+                    <li><a href="#catalog" class="nav-link" id="link-catalog">Browse Catalog</a></li>
+                    <li><a href="#prescription" class="nav-link" id="link-prescription">Upload Rx</a></li>
+                    <li><a href="#wellness" class="nav-link" id="link-wellness">Health Tools</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <!-- Sun SVG (Dark Mode Indicator) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <!-- Moon SVG (Light Mode Indicator) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+
+                <!-- Floating Cart Toggle Button -->
+                <button class="theme-toggle" id="cart-open-btn" aria-label="Open medicine list">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge" id="cart-count" style="display: none;">0</span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- HERO SECTION --- -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Trusted Community Pharmacy
+                </div>
+                <h1 class="hero-title">Your Health is Our <span>Top Priority</span></h1>
+                <p class="hero-desc">Laxmi Narsima Medical and General Store supplies authentic medicines, daily essential healthcare products, and premium personal care items. Fast service, expert guidance, and community care, right in your neighborhood.</p>
+                <div class="hero-btns">
+                    <a href="#catalog" class="btn btn-primary" id="hero-btn-catalog">Browse Medicines</a>
+                    <a href="#prescription" class="btn btn-secondary" id="hero-btn-prescription">Upload Prescription</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Genuine Medicines</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years of Trust</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Quick</span>
+                        <span class="stat-label">Home Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-container">
+                    <img src="banner.jpg" alt="Laxmi Narsima Medical storefront" class="hero-img" id="hero-main-img">
+                </div>
+                <div class="hero-floating-card">
+                    <div class="floating-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="floating-text">
+                        <h4>Pharmacist Support</h4>
+                        <p>Proper dosage guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- SERVICES & CORE VALUE PROPOSITIONS --- -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Health Services</h2>
+                <p>Designed to provide comprehensive support for your family's health and wellness needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="glass-card service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>We ensure that critical medicines and essential daily products are priced affordably to make healthcare accessible to all.</p>
+                    <a href="#catalog" class="service-link">View Pricing 
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Quick RX Upload</h3>
+                    <p>Easily upload your doctor's prescription list online. We prepare, pack, and keep it ready for quick collection or home delivery.</p>
+                    <a href="#prescription" class="service-link">Upload Now 
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Medication Guidance</h3>
+                    <p>Get professional advice on dosage, timing, and possible drug interactions from our friendly and experienced counter staff.</p>
+                    <a href="#contact" class="service-link">Talk to Us 
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- PRODUCT CATALOG SECTION --- -->
+    <section class="section" id="catalog" style="background-color: var(--bg-surface-secondary);">
+        <div class="container catalog-container">
+            <div class="section-header">
+                <h2>Healthcare Products</h2>
+                <p>Browse through high-quality OTC medications, daily wellness supplements, personal hygiene, and baby care essentials.</p>
+            </div>
+            
+            <div class="catalog-toolbar">
+                <div class="search-box">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" id="catalog-search" placeholder="Search medicines, vitamins, brand names...">
+                </div>
+                
+                <div class="category-tabs" role="tablist">
+                    <button class="tab-btn active" role="tab" data-category="all" id="tab-all">All Items</button>
+                    <button class="tab-btn" role="tab" data-category="medicines" id="tab-medicines">Medicines</button>
+                    <button class="tab-btn" role="tab" data-category="wellness" id="tab-wellness">Wellness</button>
+                    <button class="tab-btn" role="tab" data-category="personal-care" id="tab-personal">Personal Care</button>
+                    <button class="tab-btn" role="tab" data-category="baby-care" id="tab-baby">Baby Care</button>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Populated Dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- --- SHOPPING CART PANEL --- -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <div class="cart-header">
+            <h3 id="cart-title">Your Order List</h3>
+            <button class="close-cart" id="close-cart" aria-label="Close cart" style="background:none;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Populated via JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Estimated Total:</span>
+                <span id="cart-total-price">₹0.00</span>
+            </div>
+            <button class="btn btn-primary" id="checkout-btn" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.454L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.522.002 10.022-4.495 10.025-10.019.002-2.677-1.037-5.193-2.932-7.087C16.57 1.603 14.062.56 11.393.56c-5.525 0-10.026 4.497-10.029 10.022-.001 1.745.477 3.447 1.385 4.965L1.83 18.995l3.585-1.314-.02-.014.07-.03.04-.016a10.008 10.008 0 0 1 1.142.529z"/>
+                </svg>
+                Order via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- --- PRESCRIPTION UPLOAD FORM SECTION --- -->
+    <section class="section" id="prescription">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upload Prescription</h2>
+                <p>Send your prescription details directly to our staff for quick packing and hassle-free pickup or home delivery.</p>
+            </div>
+            
+            <div class="upload-grid">
+                <!-- Form Info -->
+                <div class="glass-card upload-info-card">
+                    <h3>How it Works</h3>
+                    <div class="upload-steps">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h4>Snap & Upload</h4>
+                                <p>Take a clear photo of your doctor's written prescription list and drag it into the upload dropzone.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h4>Verify Details</h4>
+                                <p>Provide your delivery location choice, phone number, and any special instructions or drug preferences.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h4>Confirm via WhatsApp</h4>
+                                <p>The system prepares a preformatted order template that redirect-launches in your WhatsApp for visual file attachments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Upload Card -->
+                <div class="glass-card">
+                    <form id="prescription-form">
+                        <div class="form-group">
+                            <label>Prescription Copy (Max 5MB)</label>
+                            <div class="upload-dropzone" id="dropzone">
+                                <div class="upload-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                                    </svg>
+                                </div>
+                                <p>Drag and drop your file here, or <span>browse files</span></p>
+                                <span class="file-format-info">Accepted formats: JPG, PNG, PDF</span>
+                                <input type="file" id="file-input" accept=".jpg, .jpeg, .png, .pdf">
+                            </div>
+                            <!-- File Preview panel -->
+                            <div class="file-preview" id="file-preview">
+                                <div class="file-info">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                    </svg>
+                                    <span class="file-name" id="file-name">prescription.png</span>
+                                </div>
+                                <span class="file-remove" id="remove-file" aria-label="Remove prescription">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rx-name">Full Name</label>
+                            <input type="text" id="rx-name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rx-phone">WhatsApp Contact Number</label>
+                            <input type="tel" id="rx-phone" required placeholder="Enter WhatsApp contact number">
+                        </div>
+
+                        <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 8px;">Order Type</label>
+                        <div class="delivery-options">
+                            <div class="delivery-option active">
+                                <input type="radio" name="delivery-type" value="home" checked id="del-home">
+                                <div class="delivery-option-text">
+                                    <label for="del-home" style="margin-bottom:0; font-weight:600; cursor:pointer;">Home Delivery</label>
+                                    <p>Delivered direct to address</p>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" name="delivery-type" value="pickup" id="del-pickup">
+                                <div class="delivery-option-text">
+                                    <label for="del-pickup" style="margin-bottom:0; font-weight:600; cursor:pointer;">Store Pickup</label>
+                                    <p>Ready to collect at counter</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rx-address">Delivery Address (If applicable)</label>
+                            <input type="text" id="rx-address" placeholder="Enter full address for home delivery">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rx-notes">Special Instructions or Dosage Requests</label>
+                            <textarea id="rx-notes" rows="3" placeholder="Specify if you need substitute brands or generic versions..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" id="submit-prescription-btn">Submit Order Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- HEALTH & WELLNESS TOOLS SECTION --- -->
+    <section class="section" id="wellness" style="background-color: var(--bg-surface-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Health Tools</h2>
+                <p>Support your daily fitness and hydration goals with our simple, instant tools.</p>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- BMI Calculator -->
+                <div class="glass-card calculator-card">
+                    <h3>BMI (Body Mass Index) Calculator</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Check if your body mass ratio falls within standard healthy metrics.</p>
+                    
+                    <div class="calc-inputs-row">
+                        <div class="form-group">
+                            <label for="bmi-weight">Weight (kg)</label>
+                            <input type="number" id="bmi-weight" placeholder="e.g. 70" min="10" max="300">
+                        </div>
+                        <div class="form-group">
+                            <label for="bmi-height">Height (cm)</label>
+                            <input type="number" id="bmi-height" placeholder="e.g. 175" min="50" max="250">
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="calculate-bmi-btn">Calculate BMI</button>
+                    
+                    <div class="calc-result-box" id="bmi-result-card">
+                        <h4 style="font-size: 0.9rem; color: var(--text-muted);">Your BMI Score</h4>
+                        <div class="calc-result-val" id="bmi-val">--</div>
+                        <div class="calc-result-desc" id="bmi-desc">Enter metrics above and click calculate.</div>
+                    </div>
+                </div>
+
+                <!-- Water Hydration tracker -->
+                <div class="glass-card calculator-card" style="align-items: center; text-align: center;">
+                    <h3>Daily Water Hydration Tracker</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Calculate and track your hydration intake targets dynamically.</p>
+                    
+                    <div class="calc-inputs-row" style="width: 100%; text-align: left;">
+                        <div class="form-group">
+                            <label for="water-weight">Your Weight (kg)</label>
+                            <input type="number" id="water-weight" value="70" min="10" max="300">
+                        </div>
+                        <div class="form-group">
+                            <label for="water-activity">Activity Level</label>
+                            <select id="water-activity">
+                                <option value="low">Low (Sedentary)</option>
+                                <option value="medium" selected>Medium (Active)</option>
+                                <option value="high">High (Athlete)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="water-tracker-container">
+                        <div class="water-visual">
+                            <div class="water-wave" id="water-wave"></div>
+                            <span class="water-text" id="water-text-indicator"><span id="water-progress-val">0</span> ml</span>
+                            <span class="water-target-label">Goal: <span id="water-goal-val">2500 ml</span></span>
+                        </div>
+                        
+                        <div class="water-btns">
+                            <button class="btn btn-secondary" id="add-glass-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-right: 4px;">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                                Add Glass (250ml)
+                            </button>
+                            <button class="btn btn-secondary" id="reset-water-btn" style="padding: 12px 16px;">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- STORE LOCATION & CONTACT DETAILS --- -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact & Location</h2>
+                <p>Located conveniently for quick counter services and immediate assistance.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Left: Hours & Contacts -->
+                <div class="contact-info-list">
+                    <!-- Location Item -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Store Location</h4>
+                            <p>Laxmi Narsima Medical and General Store,<br>Main Road Circle, Neighborhood Colony,<br>Hyderabad, Telangana, 500001</p>
+                        </div>
+                    </div>
+
+                    <!-- Hours Item -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 8:00 AM - 10:30 PM<br>Sunday: 9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Item -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Call Pharmacy Counter</h4>
+                            <p><a href="tel:+919000000000" id="counter-phone-link">+91 90000 00000</a> (Support & Guidance)</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Connect -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Connect with Us</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-btn" aria-label="Facebook">F</a>
+                                <a href="#" class="social-btn" aria-label="Twitter">T</a>
+                                <a href="#" class="social-btn" aria-label="Instagram">I</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Simulated Maps Card -->
+                <div class="map-container">
+                    <div class="mock-map">
+                        <div class="mock-map-visual" aria-hidden="true">
+                            <div class="map-pin"></div>
+                            <div class="map-overlay-details">
+                                <h5>Laxmi Narsima Medical</h5>
+                                <p>Convenient Neighborhood Access</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Interactive Navigation Map</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; margin: 8px auto 20px auto;">Easily trace local directions using your preferred GPS device or get instant guidance.</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-primary" id="open-maps-btn">Open in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">LN</div>
+                    <div class="logo-text">Laxmi <span>Narsima</span></div>
+                </div>
+                <p>A trusted neighborhood pharmacy dedicated to providing authentic medicines, quality personal care items, and friendly guidance.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Browse Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="#catalog">OTC Medicines</a></li>
+                    <li><a href="#catalog">Baby Care Products</a></li>
+                    <li><a href="#catalog">Personal Hygiene</a></li>
+                    <li><a href="#catalog">Wellness Supplements</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Health Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#wellness">BMI Calculator</a></li>
+                    <li><a href="#wellness">Water Intake Tracker</a></li>
+                    <li><a href="#prescription">Prescription Upload</a></li>
+                    <li><a href="#contact">Find Store Location</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Health Newsletter</h4>
+                <p style="font-size: 0.85rem;">Subscribe to receive weekly wellness advice, dosage reminders, and catalog updates.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required aria-label="Newsletter email">
+                    <button type="submit" aria-label="Subscribe">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Laxmi Narsima Medical and General Store. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>

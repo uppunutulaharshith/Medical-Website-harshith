@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "name": "Amoxicillin 500mg",
+    "category": "medicines",
+    "type": "Rx",
+    "price": 120,
+    "brand": "Cipla",
+    "desc": "Broad-spectrum antibiotic used to treat bacterial infections.",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Metformin 500mg",
+    "category": "medicines",
+    "type": "Rx",
+    "price": 90,
+    "brand": "Abbott",
+    "desc": "Oral diabetes medicine that helps control blood sugar levels for Type 2 diabetes patients.",
+    "image": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Atorvastatin 10mg",
+    "category": "medicines",
+    "type": "Rx",
+    "price": 150,
+    "brand": "Pfizer",
+    "desc": "Statin medication used to prevent cardiovascular disease and lower lipid levels.",
+    "image": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Amlodipine 5mg",
+    "category": "medicines",
+    "type": "Rx",
+    "price": 80,
+    "brand": "Lupin",
+    "desc": "Calcium channel blocker used to treat high blood pressure and chest pain (angina).",
+    "image": "https://images.unsplash.com/photo-1628771065518-0d82f15e8e48?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Paracetamol 650mg",
+    "category": "medicines",
+    "type": "OTC",
+    "price": 30,
+    "brand": "Dolo",
+    "desc": "Analgesic and antipyretic drug for fast relief of fever, mild-to-moderate body pain, and headache.",
+    "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Cetirizine 10mg",
+    "category": "medicines",
+    "type": "OTC",
+    "price": 45,
+    "brand": "Okacet",
+    "desc": "Second-generation antihistamine used for relief of allergic symptoms like runny nose, sneezing.",
+    "image": "https://images.unsplash.com/photo-1607619056574-7b8d304f3b24?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Ibuprofen 400mg",
+    "category": "medicines",
+    "type": "OTC",
+    "price": 50,
+    "brand": "Combiflam",
+    "desc": "Nonsteroidal anti-inflammatory drug (NSAID) used for treating pain, fever, and inflammation.",
+    "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbbab9?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Cough Syrup (Herbal)",
+    "category": "medicines",
+    "type": "OTC",
+    "price": 110,
+    "brand": "Dabur Honitus",
+    "desc": "Fast-acting natural throat relief formula for wet and dry cough, enriched with Honey & Tulsi.",
+    "image": "https://images.unsplash.com/photo-1631549916768-4119b255f946?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Multivitamin Gold capsules",
+    "category": "wellness",
+    "type": "OTC",
+    "price": 350,
+    "brand": "Revital",
+    "desc": "Daily health supplement containing essential vitamins, minerals, and Ginseng extract.",
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/A47905/multivite-gold-essential-vitamins-minerals-tabgels-for-adults-15-nos-6.1-1777125603.jpg?dim=700x0&dpr=1&q=100"
+  },
+  {
+    "id": 10,
+    "name": "Calcium & Vitamin D3",
+    "category": "wellness",
+    "type": "OTC",
+    "price": 210,
+    "brand": "Shelcal",
+    "desc": "Support for strong bones, teeth, and muscle health. Highly absorbable formula.",
+    "image": "https://media.gettyimages.com/id/539670531/photo/studio-shot-of-various-pills-in-bottles.jpg?s=612x612&w=0&k=20&c=Dvr4FJXQT2W3-5_aGdqwmPCYanUpO6UddPzh0m83zBM="
+  },
+  {
+    "id": 11,
+    "name": "Organic Whey Protein (500g)",
+    "category": "wellness",
+    "type": "OTC",
+    "price": 990,
+    "brand": "Optimum Nutrition",
+    "desc": "Premium quality grass-fed whey protein concentrate for muscle recovery and fitness support.",
+    "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Aloe Vera Hydrating Gel",
+    "category": "personal-care",
+    "type": "OTC",
+    "price": 140,
+    "brand": "Patanjali",
+    "desc": "Pure soothing gel for skin hydration, sun protection, and calming minor skin irritations.",
+    "image": "https://images.unsplash.com/photo-1527813783279-51158be04a4c?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 13,
+    "name": "Gentle Facial Cleanser",
+    "category": "personal-care",
+    "type": "OTC",
+    "price": 280,
+    "brand": "Cetaphil",
+    "desc": "pH-balanced, soap-free formula suitable for all skin types, including sensitive skin.",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Medicated Anti-Dandruff Shampoo",
+    "category": "personal-care",
+    "type": "OTC",
+    "price": 220,
+    "brand": "Selsun Blue",
+    "desc": "Contains Ketoconazole for long-lasting relief from dandruff, itching, and scaling.",
+    "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Hypoallergenic Baby Wipes",
+    "category": "baby-care",
+    "type": "OTC",
+    "price": 120,
+    "brand": "Himalaya",
+    "desc": "Fragrance-free, dermatologically tested wipes enriched with Aloe and Vitamin E.",
+    "image": "https://m.media-amazon.com/images/I/61La2wJE93L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Gentle Baby Moisturizing Lotion",
+    "category": "baby-care",
+    "type": "OTC",
+    "price": 195,
+    "brand": "Johnson's Baby",
+    "desc": "Nourishing formula designed to keep baby's delicate skin soft and moisturized for 24 hours.",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQlooS51SS2zudUTxg377Cz9_yPhcvQyjrKl9hk8JUup3pOldKp9aFSlTUro7gJGuStKiK0z2rcAIoIXwq5vcLONdAm-5X_VxiL1s7BMZ7qP1tMoSJsL_vWCQ"
+  },
+  {
+    "id": 17,
+    "name": "Vitamin C 500mg",
+    "category": "wellness",
+    "type": "OTC",
+    "price": 75,
+    "brand": "Abbott",
+    "desc": "Vitamins and immunity booster",
+    "image": "https://www.shutterstock.com/shutterstock/photos/2763622271/display_1500/stock-photo-prosper-texas-usa-march-th-kirkland-signature-chewable-vitamin-c-mg-tangy-orange-2763622271.jpg",
+    "createdAt": "2026-06-08T05:53:42.205Z"
+  }
+]
