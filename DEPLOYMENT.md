@@ -24,6 +24,16 @@ git push -u origin main
 
 The Express backend handles the API routes, saves orders/contacts/prescriptions into JSON files, and serves uploaded prescription documents.
 
+### Option A: One-Click Deploy (Recommended)
+Click the button below to instantly configure and deploy your backend server using the repository's Blueprint:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/uppunutulaharshith/Medical-Website)
+
+---
+
+### Option B: Manual Configuration
+If you prefer to configure the service manually:
+
 1. Go to [Render](https://render.com/) and log in.
 2. Click **New +** and select **Web Service**.
 3. Connect your GitHub repository `uppunutulaharshith/Medical-Website`.
