@@ -42,6 +42,12 @@ const PRODUCTS = [
     { id: 40, name: "Talc-Free Baby Powder (200g)", category: "baby-care", type: "OTC", price: 180, desc: "Cornstarch-based gentle baby powder that absorbs excess moisture and keeps skin fresh." }
 ];
 
+// --- CONFIGURATION ---
+// Set this to your deployed backend API URL (e.g., 'https://medical-website-backend.onrender.com/api') in production
+const API_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ? 'http://localhost:5003/api'
+    : 'https://medical-website-backend.onrender.com/api'; // Replace with your production API URL
+
 // --- APP STATE ---
 let cart = [];
 let selectedCategory = "all";
@@ -193,7 +199,7 @@ function setupCart() {
             }
         };
 
-        fetch('http://localhost:5003/api/orders', {
+        fetch(`${API_URL}/orders`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(orderBody)
@@ -339,7 +345,7 @@ function setupPrescriptionForm() {
         formData.append('notes', val("rx-notes") || "");
         formData.append('prescriptionCopy', uploadedFile);
 
-        fetch('http://localhost:5003/api/prescriptions', {
+        fetch(`${API_URL}/prescriptions`, {
             method: 'POST',
             body: formData
         }).then(res => res.json())
@@ -420,7 +426,7 @@ function setupContactForm() {
         // Save contact request to backend database
         const contactBody = { name, email, phone, subject, message };
 
-        fetch('http://localhost:5003/api/contact', {
+        fetch(`${API_URL}/contact`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(contactBody)
