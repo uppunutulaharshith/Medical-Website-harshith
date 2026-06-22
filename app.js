@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // Initializations
-    renderProducts();
+    fetchProducts();
     setupFilters();
     setupCart();
     setupPrescriptionForm();
@@ -90,12 +90,32 @@ document.addEventListener("DOMContentLoaded", () => {
     setupContactForm();
 });
 
+// --- DYNAMIC PRODUCTS FETCH ---
+let productsList = [];
+
+async function fetchProducts() {
+    try {
+        const res = await fetch(`${API_URL}/products`);
+        const data = await res.json();
+        if (data.success && data.products) {
+            productsList = data.products;
+        } else {
+            productsList = PRODUCTS;
+        }
+    } catch (err) {
+        console.error("Failed to fetch products from API, falling back to static database:", err);
+        productsList = PRODUCTS;
+    }
+    renderProducts();
+}
+
 // --- RENDER PRODUCTS ---
 function renderProducts() {
     const grid = document.getElementById("products-grid");
     if (!grid) return;
 
-    const filtered = PRODUCTS.filter(p => 
+    const listToFilter = productsList.length > 0 ? productsList : PRODUCTS;
+    const filtered = listToFilter.filter(p => 
         (selectedCategory === "all" || p.category === selectedCategory) &&
         (p.name.toLowerCase().includes(searchFilter.toLowerCase()) || p.desc.toLowerCase().includes(searchFilter.toLowerCase()))
     );
@@ -212,7 +232,7 @@ function setupCart() {
 
         let msg = "*Laxmi Narsima Medical & General Store*\n*New Order Inquiry:*\n\n" +
             cart.map((it, idx) => {
-                const prod = PRODUCTS.find(p => p.id === it.id);
+                const prod = productsList.find(p => p.id === it.id) || PRODUCTS.find(p => p.id === it.id);
                 return `${idx + 1}. ${it.name} x ${it.qty} - ₹${(it.price * it.qty).toFixed(2)}${prod?.type === "Rx" ? " (Requires Rx)" : ""}`;
             }).join('\n') +
             `\n\n*Total Estimate: ₹${cart.reduce((s, c) => s + c.price * c.qty, 0).toFixed(2)}*\n\n_Note: Please upload any required prescriptions if you have Rx items in your list._`;
@@ -228,7 +248,7 @@ function setupCart() {
 }
 
 function addToCart(id) {
-    const prod = PRODUCTS.find(p => p.id === id);
+    const prod = productsList.find(p => p.id === id) || PRODUCTS.find(p => p.id === id);
     if (!prod) return;
     const existing = cart.find(it => it.id === id);
     if (existing) existing.qty++;
