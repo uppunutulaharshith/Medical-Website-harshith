@@ -135,7 +135,12 @@ const Checkout = () => {
     });
     
     message += `\n*Total Estimate: ₹${placedOrder.total.toFixed(2)}*\n`;
-    message += `*Payment Method:* ${placedOrder.paymentDetails.method}\n\n`;
+    if (placedOrder.paymentDetails.method === 'UPI') {
+      message += `*Payment Method:* UPI (Paid to 7569796263-k352@axl)\n`;
+      message += `*Txn ID:* ${placedOrder.paymentDetails.transactionId}\n\n`;
+    } else {
+      message += `*Payment Method:* ${placedOrder.paymentDetails.method}\n\n`;
+    }
     message += `_Please pack my medicines. Thank you!_`;
 
     const waUrl = `https://wa.me/919000000000?text=${encodeURIComponent(message)}`;
@@ -320,7 +325,7 @@ const Checkout = () => {
                 onClick={() => setPaymentMethod('UPI')}
               >
                 <QrCode />
-                <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>UPI QR Mock</span>
+                <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>UPI QR Code</span>
               </div>
 
               <div 
@@ -336,23 +341,29 @@ const Checkout = () => {
             {paymentMethod === 'UPI' && (
               <div style={{ textAlign: 'center', padding: '20px', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-surface-secondary)', marginBottom: '20px' }}>
                 <h4 style={{ fontWeight: 700, marginBottom: '10px' }}>Scan to Pay with UPI</h4>
+                <p style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--primary)', marginBottom: '16px' }}>
+                  UPI ID: 7569796263-k352@axl
+                </p>
                 <div style={{ 
                   backgroundColor: 'white', 
                   border: '1px solid #ddd', 
                   borderRadius: 'var(--radius-sm)', 
-                  padding: '24px', 
+                  padding: '16px', 
                   width: '180px', 
                   height: '180px', 
                   margin: '0 auto 16px auto',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'var(--text-muted)'
                 }}>
-                  <QrCode size={120} style={{ strokeWidth: 1.5, color: '#334155' }} />
+                  <img 
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(`upi://pay?pa=7569796263-k352@axl&pn=Laxmi%20Narsimha%20Medical&am=${grandTotal.toFixed(2)}&cu=INR&tn=LN-Order`)}`}
+                    alt="UPI QR Code"
+                    style={{ width: '150px', height: '150px', display: 'block' }}
+                  />
                 </div>
                 <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                  Scan the mock QR code using any UPI app (GPay, PhonePe, Paytm). The mock transaction status registers instantly on order submission.
+                  Scan the QR code using GPay, PhonePe, Paytm, or any UPI app to pay <strong>₹{grandTotal.toFixed(2)}</strong>.
                 </p>
               </div>
             )}
